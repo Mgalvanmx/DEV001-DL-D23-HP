@@ -1,0 +1,12 @@
+body{
+    background: green;
+}
+container{
+    background: red;
+    border: solid 2px blue;
+    display: flex;
+    flex-basis: auto;
+    align-items: flex-start;
+    justify-content: center;
+    display: inline-block;
+}
