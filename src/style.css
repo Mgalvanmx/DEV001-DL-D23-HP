@@ -1,12 +1,23 @@
-body{
-    background: green;
-}
-container{
-    background: red;
-    border: solid 2px blue;
+body {
+    background-color: green;
+    padding: 30px;
     display: flex;
-    flex-basis: auto;
-    align-items: flex-start;
+}
+#root {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    display: inline-block;
+    background: blue;
+    border: 3px solid red;
+    width: 80%;
+    height: 80%;
+}
+
+.tarjeta{
+    border: 2px solid black;
+    width: 30%;
+    margin: 10px;
+    line-height: 100px;
+    font-size: 30px;
+    background: yellow;
 }
