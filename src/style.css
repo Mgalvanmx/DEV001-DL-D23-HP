@@ -1,12 +1,19 @@
 body{
     background: green;
 }
-container{
-    background: red;
+section{
     border: solid 2px blue;
     display: flex;
-    flex-basis: auto;
-    align-items: flex-start;
-    justify-content: center;
-    display: inline-block;
+    flex-wrap: wrap;
+    
 }
+.nombres{
+    border: solid red;
+}
+.imagen {
+    height:200px
+   }
+img {
+    width: auto; 
+    max-height: 100%; 
+   }

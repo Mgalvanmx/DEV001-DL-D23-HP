@@ -1,20 +1,19 @@
-import { example } from './data.js';
-import data from './data/harrypotter/harrypotter.js';
+//import { example } from './data.js';
+import data from './data/harrypotter/data.js';
 
-const personaje = data.characters
-personaje.forEach((characters) => {
+const personaje = data.characters;
 
-    //let nombres = document.getElementById("div1").innerHTML = characters.name;
-    let nombres2 = characters.name;
-    const div = document.createElement("container");
-    const content = document.createTextNode(nombres2);
-    div.appendChild(content);
-    let añadirDiv = document.getElementById("div1");
-    document.body.insertBefore(div, añadirDiv);
-
-    console.log(nombres2);
+personaje.forEach((personaje) => {
+    let nombre = personaje.name;
+    const article = document.createElement("article");
+    article.className = "nombres";
+    const content = document.createTextNode(nombre);
+    const image = document.createElement('img');
+    image.src  = '/rayo.png';
+    image.className ="imagen"
+    article.append(content, image);
+    let addArticle = document.getElementById("section");
+    addArticle.insertAdjacentElement("beforeend", article);    
 });
 
-
-
-console.log(example, data);
+//console.log(example, data);
