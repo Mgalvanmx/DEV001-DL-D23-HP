@@ -1,9 +1,8 @@
-// estas funciones son de ejemplo
+/*function filtrado (personaje, select) {
+  let selectedOption = this.options[select.selectedIndex];
+  let filtrar = personaje.filter(personaje => personaje.gender === selectedOption.value)
+  console.log(filtrar)
+  return filtrado
+}    
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
+export {filtrado};*/

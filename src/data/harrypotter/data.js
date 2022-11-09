@@ -1,6 +1,65 @@
 export default {
   characters: [
     {
+      "id": 326,
+      "name": "Harry Potter",
+      "birth": "31 July, 1980",
+      "death": null,
+      "species": "Human",
+      "ancestry": "Half-blood",
+      "gender": "Male",
+      "hair_color": "Jet-black",
+      "eye_color": "Bottle green",
+      "wand": "11\", Holly, phoenix feather",
+      "patronus": "Stag",
+      "house": "Gryffindor",
+      "associated_groups": [
+        "Potter family",
+        "Weasley family",
+        "Albus Dumbledore",
+        "Dumbledore's Army",
+        "Order of the Phoenix",
+        "Hogwarts School of Witchcraft and Wizardry",
+        "Gryffindor",
+        "Gryffindor Quidditch team",
+        "Slug Club",
+        "British Ministry of Magic",
+        "Auror Office",
+        "Department of Magical Law Enforcement",
+        "S.P.E.W."
+      ],
+      "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
+    },
+    {
+      "id": 756,
+      "name": "Albus Dumbledore",
+      "birth": "Late August 1881",
+      "death": "30 June, 1997 (aged 115)",
+      "species": "Human",
+      "ancestry": "Half-blood",
+      "gender": "Male",
+      "hair_color": "Silver, formerly auburn",
+      "eye_color": "Blue",
+      "wand": "Unknown length, wood and core (formerly)",
+      "patronus": "Phoenix",
+      "house": "Gryffindor",
+      "associated_groups": [
+        "Order of Merlin",
+        "Order of the Phoenix",
+        "Dumbledore's Army",
+        "Harry Potter",
+        "Hogwarts School of Witchcraft and Wizardry",
+        "Gryffindor",
+        "Transfiguration department",
+        "British Ministry of Magic",
+        "Council of Magical Law",
+        "Wizengamot",
+        "International Confederation of Wizards",
+        "Dumbledore family"
+      ],
+      "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
+    },
+    {
       "id": 1,
       "name": "Euan Abercrombie",
       "birth": "between 1 September 1983 and 31 August 1984",
@@ -4473,7 +4532,7 @@ export default {
       "eye_color": "Grey",
       "wand": "10\", Hawthorn, unicorn hair (formerly)",
       "patronus": "None",
-      "house": "Malfoy family",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -4489,7 +4548,7 @@ export default {
       "eye_color": "Grey",
       "wand": "Elm and dragon heartstring (formerly)",
       "patronus": "None",
-      "house": "Malfoy family",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -5460,36 +5519,7 @@ export default {
       ],
       "books_featured_in": [1, 5, 7]
     },
-    {
-      "id": 326,
-      "name": "Harry Potter",
-      "birth": "31 July, 1980",
-      "death": null,
-      "species": "Human",
-      "ancestry": "Half-blood",
-      "gender": "Male",
-      "hair_color": "Jet-black",
-      "eye_color": "Bottle green",
-      "wand": "11\", Holly, phoenix feather",
-      "patronus": "Stag",
-      "house": "Gryffindor",
-      "associated_groups": [
-        "Potter family",
-        "Weasley family",
-        "Albus Dumbledore",
-        "Dumbledore's Army",
-        "Order of the Phoenix",
-        "Hogwarts School of Witchcraft and Wizardry",
-        "Gryffindor",
-        "Gryffindor Quidditch team",
-        "Slug Club",
-        "British Ministry of Magic",
-        "Auror Office",
-        "Department of Magical Law Enforcement",
-        "S.P.E.W."
-      ],
-      "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
-    },
+    
     {
       "id": 327,
       "name": "James Potter I",
@@ -9350,7 +9380,7 @@ export default {
       "death": "Middle Ages",
       "species": "Human",
       "ancestry": null,
-      "gender": "Female (likely)",
+      "gender": "Female",
       "hair_color": null,
       "eye_color": null,
       "wand": null,
@@ -9771,7 +9801,7 @@ export default {
       "eye_color": null,
       "wand": "12¾\", Walnut, dragon heartstring",
       "patronus": "None",
-      "house": "House of Black",
+      "house": "Slytherin",
       "associated_groups": [],
       "books_featured_in": [4, 5, 6, 7]
     },
@@ -11826,7 +11856,7 @@ export default {
       "name": "Victoire Weasley",
       "birth": "2 May, early 2000s Great Britain or France",
       "death": null,
-      "species": "Human (Veela ancestry)",
+      "species": "Human",
       "ancestry": "One-eighth Veela",
       "gender": "Female",
       "hair_color": "Blonde",
@@ -11986,35 +12016,6 @@ export default {
       "associated_groups": ["Hogwarts School of Witchcraft and Wizardry", "Hufflepuff"],
       "books_featured_in": [5]
     },
-    {
-      "id": 756,
-      "name": "Albus Dumbledore",
-      "birth": "Late August 1881",
-      "death": "30 June, 1997 (aged 115)",
-      "species": "Human",
-      "ancestry": "Half-blood",
-      "gender": "Male",
-      "hair_color": "Silver, formerly auburn",
-      "eye_color": "Blue",
-      "wand": "Unknown length, wood and core (formerly)",
-      "patronus": "Phoenix",
-      "house": "Gryffindor",
-      "associated_groups": [
-        "Order of Merlin",
-        "Order of the Phoenix",
-        "Dumbledore's Army",
-        "Harry Potter",
-        "Hogwarts School of Witchcraft and Wizardry",
-        "Gryffindor",
-        "Transfiguration department",
-        "British Ministry of Magic",
-        "Council of Magical Law",
-        "Wizengamot",
-        "International Confederation of Wizards",
-        "Dumbledore family"
-      ],
-      "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
-    }
   ],
   funFacts: [
     {
