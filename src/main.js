@@ -96,11 +96,3 @@ personaje.forEach((personaje) => {
     card.append(front, back)
     addArticle.insertAdjacentElement("beforeend", card); 
 });
-
-const select = document.getElementById('filtrar');
-select.addEventListener('change', 
-function filtrado() {
-    let selectedOption = this.options[select.selectedIndex];
-    let filtrar = personaje.filter(personaje => personaje.gender === selectedOption.value)
-    console.log(filtrar)
-});
