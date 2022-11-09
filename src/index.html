@@ -7,18 +7,56 @@
   </head>
     <body>
       <header>
-        <h1>Harry Potter</h1>
+        <img class="castillo" src="img/header.png" alt="">
+        <nav>
+          <label for="filter">Filter</label>
+          <select name="filtro" id="filtrar" value="Filter">Filter
+            <option value="">Filter</option>
+            <optgroup label="Gender">
+              <option id="man" value="Male">Male</option>
+              <option id="women" Value="Female">Female</option>
+            </optgroup>  
+            <optgroup label="Characters">
+              <option id="principales" value="Main">Main</option>
+              <option id="secundarios" value="Supporting">Supporting</option>
+            </optgroup>  
+            <optgroup label="House">
+              <option id="casa1" value="Gryffindor">Gryffindor</option>
+              <option id="casa2" value="Slytherin">Slytherin</option>
+              <option id="casa3" value="Hufflepuff">Hufflepuff</option>
+              <option id="casa4" value="Ravenclaw">Ravenclaw</option>
+            </optgroup>
+            <optgroup label="Specie">
+              <option id="humano" value="Human">Human</option>
+              <option id="fantasma" value="Human (formerly)">Ghost</option>
+              <!--<option value="">Creatures</option>-->
+            </optgroup>
+            <optgroup label="Books">
+              <option id="libro1" value="1">Philosopher's Stone</option>
+              <option id="libro2" value="2">Chamber of Secrets</option>
+              <option id="libro3" value="3">Prisoner of Azkaban</option>
+              <option id="libro4" value="4">Goblet of Fire</option>
+              <option id="libro5" value="5">Order of The Phenix</option>
+              <option id="libro6" value="6">Half-Blood Prince</option>
+              <option id="libro7" value="7">Deathly Hallows</option>
+              <option id="libro8" value="8">Cursed Child</option>
+            </optgroup>
+         </select>
+         <label for="">Order</label>
+         <select name="order" id="ordenar">
+          <option value="">Order</option>
+          <option value="">A-Z</option>
+          <option value="">Z-A</option>
+         </select>
+         <input type="text" id="buscar" placeholder="Type to search..." onkeyup="search()">
+        </nav>
       </header>
-      <h3>Characters</h3>
+      <br>
+      <br>
       <section id="section">
-        
 
       </section>
 
-      
-      <div id="div1"></div>
-
-     
     <div id="root"></div>
     <script src="main.js" type="module"></script>
     <script src = data.js></script>
