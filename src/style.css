@@ -5,6 +5,9 @@ body{
 header{
     width: 100%;
     height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 .castillo{
     width: 100%;
@@ -44,7 +47,6 @@ section{
     flex-direction: column-reverse;
     width: 200px;
     height: 250px;
-    padding-bottom: 5px;
     border-radius: 15px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
     color: beige;
@@ -72,6 +74,51 @@ section{
 img {
     justify-content: center;
     width: auto;
-    height: 180px;
+    height: 170px;
     margin: auto;
+}
+.nombre {
+    margin: 10px;
+}
+nav {
+    background-color: #4A4A80;
+    height: 60px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+   
+}
+.filtro {
+    background-color: #365B73;
+    color: beige;
+    height: auto;
+    width: 200px;
+    border: solid 2px #7E9ABF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 5px;
+    font-size: medium;
+
+}
+.buscar {
+    background-color: #365B73;
+    color: beige;
+    height: auto;
+    width: 250px;
+    border: solid 2px #7E9ABF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 5px;
+    font-size: medium;
+}
+::placeholder {
+    color: beige;
+}
+.filtro::-webkit-scrollbar{
+    width: 8px;
+}
+.filtro::-webkit-scrollbar-thumb{
+    background-color: #7E9ABF;
+    border-radius: 4px;
 }

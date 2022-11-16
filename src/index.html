@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
     <body>
       <header>
         <img class="castillo" src="img/header.png" alt="">
         <nav>
-          <label for="filter">Filter</label>
-          <select name="filtro" id="filtrar" value="Filter">Filter
+         <select class="filtro" id="filtrar" value="Filter">
             <option value="">Filter</option>
             <optgroup label="Gender">
               <option id="man" value="Male">Male</option>
@@ -26,11 +26,6 @@
               <option id="casa3" value="Hufflepuff">Hufflepuff</option>
               <option id="casa4" value="Ravenclaw">Ravenclaw</option>
             </optgroup>
-            <optgroup label="Specie">
-              <option id="humano" value="Human">Human</option>
-              <option id="fantasma" value="Human (formerly)">Ghost</option>
-              <!--<option value="">Creatures</option>-->
-            </optgroup>
             <optgroup label="Books">
               <option id="libro1" value="1">Philosopher's Stone</option>
               <option id="libro2" value="2">Chamber of Secrets</option>
@@ -42,13 +37,12 @@
               <option id="libro8" value="8">Cursed Child</option>
             </optgroup>
          </select>
-         <label for="">Order</label>
-         <select name="order" id="ordenar">
+         <select class="filtro" id="ordenar">
           <option value="">Order</option>
-          <option value="">A-Z</option>
-          <option value="">Z-A</option>
+          <option value="a-z">A - Z</option>
+          <option value="z-a">Z - A</option>
          </select>
-         <input type="text" id="buscar" placeholder="Type to search..." onkeyup="search()">
+         <input class="buscar" type="text" id="buscar" placeholder="Type to search..." onkeyup="search()">
         </nav>
       </header>
       <br>
@@ -59,7 +53,6 @@
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
-    <script src = data.js></script>
   </body>
 
 </html>
