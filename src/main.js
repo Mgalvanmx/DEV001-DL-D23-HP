@@ -144,7 +144,5 @@ function search(e) {
     const inputValue = e.target.value
     addArticle.innerHTML = ""
     const searchResult = searchFilter(personajes, inputValue)
-    crearElementos(searchResult)
-    console.log(e.target.value)
-    
+    crearElementos(searchResult)  
 }
