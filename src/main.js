@@ -1,12 +1,12 @@
-import { filterGender, filterRol, filterHouse, sortCharacters} from './data.js';
+import {filterProperties, filterBooks, sortCharacters, searchFilter} from './data.js';
 import data from './data/harrypotter/data.js';
 
-const inputsearch = document.getElementById("buscar")
+const inputSearch = document.getElementById("buscar")
 const selectOrder = document.getElementById("ordenar")
 const select = document.getElementById("filtrar");
 const addArticle = document.getElementById("section");
 const personajes = data.characters;
-let personajesMostrados= data.characters;
+let filterCharacters = data.characters;
 
 function crearElementos(arreglo) {
     arreglo.forEach((personaje) => {
@@ -108,45 +108,43 @@ crearElementos(personajes)
 
 select.addEventListener("change", filtrado)
 function filtrado() {
-    let selectedOption = this.options[select.selectedIndex].value;
-    if ((selectedOption === "Male") || (selectedOption === "Female")) {
+    let optionElement = select.options[select.selectedIndex];
+    let selectedOption = select.options[select.selectedIndex].value;
+    let selectedOptionBook = parseInt(select.options[select.selectedIndex].value);
+    
+    if (optionElement.dataset.group === "books") {
         addArticle.innerHTML = ""
-        personajesMostrados = filterGender(personajes, selectedOption)
-        crearElementos(personajesMostrados)
+        filterCharacters = filterBooks(personajes, selectedOptionBook)
+        crearElementos(filterCharacters)
     }
-    if ((selectedOption === "Main") || (selectedOption === "Supporting")) {
+    else {
         addArticle.innerHTML = ""
-        personajesMostrados = filterRol(personajes, selectedOption)
-        crearElementos(personajesMostrados)
+        filterCharacters = filterProperties(personajes, optionElement.dataset.group, selectedOption)
+        crearElementos(filterCharacters)
     }
-    if ((selectedOption === "Gryffindor") || (selectedOption === "Slytherin") || (selectedOption === "Hufflepuff") || (selectedOption === "Ravenclaw")) {
-        addArticle.innerHTML = ""
-        personajesMostrados = filterHouse(personajes, selectedOption)
-        crearElementos(personajesMostrados)
-    }
-    /*if (selectedOption === 1){
-        addArticle.innerHTML = ""
-        personajesMostrados = filterBooks(personajes, selectedOption)
-        crearElementos(personajesMostrados)
-    }*/
 }
 
 selectOrder.addEventListener("change", ordenar)
-function ordenar(){
+function ordenar() {
     let selectedOption = this.options[selectOrder.selectedIndex].value;
-    if (selectedOption === "a-z"){
+    if (selectedOption === "a-z") {
         addArticle.innerHTML = ""
-        const ordenarAz = sortCharacters(personajesMostrados)
+        const ordenarAz = sortCharacters(filterCharacters)
         crearElementos(ordenarAz)
     }
-    if (selectedOption === "z-a"){
+    if (selectedOption === "z-a") {
         addArticle.innerHTML = ""
-        const ordenarZa = sortCharacters(personajesMostrados).reverse()
+        const ordenarZa = sortCharacters(filterCharacters).reverse()
         crearElementos(ordenarZa)
     }
 }
 
-inputsearch,addEventListener("keyup", search)
-function search(){
-    inputsearch.value.toUpperCase()
+inputSearch.addEventListener("keyup", search)
+function search(e) {
+    const inputValue = e.target.value
+    addArticle.innerHTML = ""
+    const searchResult = searchFilter(personajes, inputValue)
+    crearElementos(searchResult)
+    console.log(e.target.value)
+    
 }

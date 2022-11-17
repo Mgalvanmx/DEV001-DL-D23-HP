@@ -1,28 +1,15 @@
-export const filterGender = (personajes, selectedOption) => {
-  const genderFiltered = personajes.filter(personaje => {
-    return personaje.gender === selectedOption
+export const filterProperties = (personajes, property, selectedOption) => {
+  const propertyFiltered = personajes.filter(personaje => {
+    return personaje[property] === selectedOption
   });
-  return genderFiltered
-}
-export const filterRol = (personajes, selectedOption) => {
-  const rolFiltered = personajes.filter(personaje => {
-    return personaje.rol === selectedOption
-  });
-  return rolFiltered
-}
-export const filterHouse = (personajes, selectedOption) => {
-  const houseFiltered = personajes.filter(personaje => {
-    return personaje.house === selectedOption
-  });
-  return houseFiltered
+  return propertyFiltered
 }
 export const filterBooks = (personajes, selectedOption) => {
-  const booksFiltered = personajes.filter(personaje => {
-     return personaje.books_featured_in.includes(selectedOption)
-    })
-    return booksFiltered
+  const propertyFiltered = personajes.filter(personaje => {
+    return personaje.books_featured_in.includes(selectedOption)
+  });
+  return propertyFiltered
 }
-
 export const sortCharacters = (personajes) => {
   const copyPersonajes = personajes
   const charactersorted = copyPersonajes.sort((a, b) => {
@@ -32,6 +19,9 @@ export const sortCharacters = (personajes) => {
   })
    return charactersorted
 }
-
-
-
+export const searchFilter = (personajes, inputValue) => {
+  const filterSearch = personajes.filter(personaje => {
+    return personaje.name.toLowerCase().includes(inputValue)
+  });
+  return filterSearch
+}
