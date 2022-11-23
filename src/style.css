@@ -58,7 +58,7 @@ nav {
     min-width: 100px;
     border: solid 2px #7E9ABF;
     border-radius: 10px;
-    margin: auto;
+    margin: 5px;
     padding: 5px;
     font-size: medium;
 }
@@ -84,7 +84,7 @@ nav {
     background: #365B73;
     padding: 4px;
     margin-right: 25px;
-    margin-left: 8px;
+    margin-left: 10px;
     transition: 0, 5s;
 }
 
