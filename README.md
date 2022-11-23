@@ -31,15 +31,19 @@ El colegio Hogwarts de Magia y Hechicería utiliza el sistema de Casas. El cuerp
 ## 3. Investigación de usuarios
 
 * ¿Quiénes son los principales usuarios de producto?
+
     Personas de entre 15 – 40 años
 
 * ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+
     Conocer información principal de HP
 
 * ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+
     Información de los personajes, ya que indica datos relevantes de cada personaje. 
 
 * ¿Cuándo utilizan o utilizarían el producto?
+
   >* Cuando un usuario desconoce la saga y quiere familiarizarse.
   >* Cuando un usuario experto quiere verificar un dato en especifico de un personaje.
 
@@ -88,13 +92,10 @@ Yo como usuario quiero poder buscar por nombre a los personajes para poder ser m
 
 #### 5.1 Prototipo de baja fidelidad
 
-HU 1.
 ![Sin titulo](src/img/HU1.jpeg)
 
-HU 1.
 ![Sin titulo](src/img/HU.jpeg)
 
-HU 2-3.
 ![Sin titulo](src/img/HU2Funciones.jpeg)
 
 #### 5.2 Prototipo de alta fidelidad
