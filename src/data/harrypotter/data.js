@@ -2,6 +2,7 @@ export default {
   characters: [
     {
       "id": 326,
+      "rol": "Main",
       "name": "Harry Potter",
       "birth": "31 July, 1980",
       "death": null,
@@ -32,6 +33,7 @@ export default {
     },
     {
       "id": 756,
+      "rol": "Main",
       "name": "Albus Dumbledore",
       "birth": "Late August 1881",
       "death": "30 June, 1997 (aged 115)",
@@ -863,6 +865,7 @@ export default {
     },
     {
       "id": 50,
+      "rol": "Main",
       "name": "Sirius Black",
       "birth": "3 November, 1959",
       "death": "18 June, 1996 (aged 36)",
@@ -3437,6 +3440,7 @@ export default {
     },
     {
       "id": 205,
+      "rol": "Main",
       "name": "Rubeus Hagrid",
       "birth": "6 December 1928",
       "death": null,
@@ -4265,6 +4269,7 @@ export default {
     },
     {
       "id": 254,
+      "rol": "Supporting",
       "name": "Neville Longbottom",
       "birth": "30 July, 1980",
       "death": null,
@@ -4356,6 +4361,7 @@ export default {
     },
     {
       "id": 258,
+      "rol": "Supporting",
       "name": "Remus Lupin",
       "birth": "10 March, 1960",
       "death": "2 May, 1998 (aged 38)",
@@ -4522,6 +4528,7 @@ export default {
     },
     {
       "id": 267,
+      "rol": "Main",
       "name": "Draco Malfoy",
       "birth": "5 June, 1980",
       "death": null,
@@ -4538,6 +4545,7 @@ export default {
     },
     {
       "id": 268,
+      "rol": "Supporting",
       "name": "Lucius Malfoy",
       "birth": "between 9 September 1953 and 8 September 1954",
       "death": null,
@@ -4828,6 +4836,7 @@ export default {
     },
     {
       "id": 285,
+      "rol": "Supporting",
       "name": "Alastor Moody",
       "birth": "Pre 1960",
       "death": "27 July, 1997",
@@ -5281,6 +5290,7 @@ export default {
     },
     {
       "id": 312,
+      "rol": "Supporting",
       "name": "Peter Pettigrew",
       "birth": "between 1 September 1959 and 31 August 1960",
       "death": "Late March 1998 (aged 38 -39)",
@@ -5898,6 +5908,7 @@ export default {
     },
     {
       "id": 350,
+      "rol": "Main",
       "name": "Tom Riddle (Voldemort)",
       "birth": "31 December, 1926",
       "death": "2 May, 1998 (aged 71)",
@@ -6459,6 +6470,7 @@ export default {
     },
     {
       "id": 382,
+      "rol": "Main",
       "name": "Severus Snape",
       "birth": "9 January 1960",
       "death": "2 May 1998 (aged 38)",
@@ -7317,6 +7329,7 @@ export default {
     },
     {
       "id": 472,
+      "rol": "Supporting",
       "name": "Fred Weasley",
       "birth": "1 April, 1978",
       "death": "2 May, 1998 (aged 20)",
@@ -7344,6 +7357,7 @@ export default {
     },
     {
       "id": 473,
+      "rol": "Supporting",
       "name": "George Weasley",
       "birth": "1 April, 1978",
       "death": null,
@@ -7410,6 +7424,7 @@ export default {
     },
     {
       "id": 476,
+      "rol": "Main",
       "name": "Ronald Weasley",
       "birth": "1 March, 1980",
       "death": null,
@@ -9213,6 +9228,7 @@ export default {
     },
     {
       "id": 587,
+      "rol": "Main",
       "name": "Hermione Granger",
       "birth": "19 September, 1979",
       "death": null,
@@ -9791,6 +9807,7 @@ export default {
     },
     {
       "id": 622,
+      "rol": "Supporting",
       "name": "Bellatrix Lestrange",
       "birth": "1951",
       "death": "2 May, 1998 (aged 46 - 47)",
@@ -9844,6 +9861,7 @@ export default {
     },
     {
       "id": 625,
+      "rol": "Supporting",
       "name": "Luna Lovegood",
       "birth": "13 February, 1981",
       "death": null,
@@ -10156,6 +10174,7 @@ export default {
     },
     {
       "id": 644,
+      "rol": "Supporting",
       "name": "Minerva McGonagall",
       "birth": "4 October,",
       "death": null,
@@ -11540,6 +11559,7 @@ export default {
     },
     {
       "id": 727,
+      "rol": "Supporting",
       "name": "Dolores Umbridge",
       "birth": "British Ministry of Magic (formerly)",
       "death": null,
@@ -11778,6 +11798,7 @@ export default {
     },
     {
       "id": 743,
+      "rol": "Supporting",
       "name": "Ginny Weasley",
       "birth": "11 August, 1981",
       "death": null,
