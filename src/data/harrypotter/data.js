@@ -14,6 +14,7 @@ export default {
       "wand": "11\", Holly, phoenix feather",
       "patronus": "Stag",
       "house": "Gryffindor",
+      "rol": "Main",
       "associated_groups": [
         "Potter family",
         "Weasley family",
@@ -45,6 +46,7 @@ export default {
       "wand": "Unknown length, wood and core (formerly)",
       "patronus": "Phoenix",
       "house": "Gryffindor",
+      "rol": "Main",
       "associated_groups": [
         "Order of Merlin",
         "Order of the Phoenix",
@@ -877,6 +879,7 @@ export default {
       "wand": "Unknown length, wood and core",
       "patronus": "Non-corporeal",
       "house": "Gryffindor",
+      "rol": "Main",
       "associated_groups": [
         "Black family (formerly)",
         "Potter family",
@@ -3283,7 +3286,7 @@ export default {
       "name": "Gellert Grindelwald",
       "birth": "Between summer 1882 and summer 1883",
       "death": "March, 1998 (aged around 115)",
-      "species": "Human (Seer)",
+      "species": "Human",
       "ancestry": "Pure-blood or Half-blood",
       "gender": "Male",
       "hair_color": "Blond",
@@ -3444,7 +3447,7 @@ export default {
       "name": "Rubeus Hagrid",
       "birth": "6 December 1928",
       "death": null,
-      "species": "Half-Human/Half-Giant",
+      "species": "Human",
       "ancestry": "Part-Human (Half-giant)",
       "gender": "Male",
       "hair_color": "Black",
@@ -3452,6 +3455,7 @@ export default {
       "wand": "16\", Oak, unknown core",
       "patronus": "None",
       "house": "Gryffindor",
+      "rol": "Main",
       "associated_groups": [
         "Hogwarts School of Witchcraft and Wizardry",
         "Gryffindor",
@@ -4281,6 +4285,7 @@ export default {
       "wand": "Father's wand (formerly)",
       "patronus": "Non-corporeal",
       "house": "Gryffindor",
+      "rol": "Supporting",
       "associated_groups": [
         "Longbottom family",
         "Hogwarts School of Witchcraft and Wizardry",
@@ -4365,7 +4370,7 @@ export default {
       "name": "Remus Lupin",
       "birth": "10 March, 1960",
       "death": "2 May, 1998 (aged 38)",
-      "species": "Werewolf (formerly Human)",
+      "species": "Human",
       "ancestry": "Half-blood",
       "gender": "Male",
       "hair_color": "Light brown flecked with grey",
@@ -4373,6 +4378,7 @@ export default {
       "wand": "10¼\", Cypress, unicorn hair",
       "patronus": "Wolf",
       "house": "Gryffindor",
+      "rol": "Supporting",
       "associated_groups": [
         "Lupin family",
         "Howell family",
@@ -4391,7 +4397,7 @@ export default {
       "name": "Edward Lupin",
       "birth": "April, 1998",
       "death": null,
-      "species": "Human (Metamorphmagus)",
+      "species": "Human",
       "ancestry": "Half-blood",
       "gender": "Male",
       "hair_color": "Variable",
@@ -4540,6 +4546,7 @@ export default {
       "wand": "10\", Hawthorn, unicorn hair (formerly)",
       "patronus": "None",
       "house": "Slytherin",
+      "rol": "Main",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -4557,6 +4564,7 @@ export default {
       "wand": "Elm and dragon heartstring (formerly)",
       "patronus": "None",
       "house": "Slytherin",
+      "rol": "Supporting",
       "associated_groups": [],
       "books_featured_in": [1, 2, 3, 4, 5, 6, 7]
     },
@@ -4848,6 +4856,7 @@ export default {
       "wand": "Unknown length, wood and core",
       "patronus": "Non-corporeal",
       "house": "Unknown",
+      "rol": "Supporting",
       "associated_groups": [
         "Order of the Phoenix",
         "Advance Guard",
@@ -5302,6 +5311,7 @@ export default {
       "wand": "Unknown 1st wand",
       "patronus": "None",
       "house": "Gryffindor",
+      "rol": "Supporting",
       "associated_groups": [
         "Pettigrew family",
         "Weasley family (as Scabbers) (formerly)",
@@ -5920,6 +5930,7 @@ export default {
       "wand": "13½\", Yew, phoenix feather core",
       "patronus": "None",
       "house": "Slytherin",
+      "rol": "Main",
       "associated_groups": [
         "Death Eaters",
         "Hogwarts School of Witchcraft and Wizardry (formerly)",
@@ -6482,6 +6493,7 @@ export default {
       "wand": "Unknown length, wood and core",
       "patronus": "Doe",
       "house": "Slytherin",
+      "rol": "Main",
       "associated_groups": [
         "Snape family",
         "Prince family",
@@ -7341,6 +7353,7 @@ export default {
       "wand": "Unknown length, wood and core",
       "patronus": "Magpie",
       "house": "Gryffindor",
+      "rol": "Supporting",
       "associated_groups": [
         "Circle of Khanna",
         "Dumbledore's Army",
@@ -7369,6 +7382,7 @@ export default {
       "wand": "Unknown length, wood and core",
       "patronus": "Magpie",
       "house": "Gryffindor",
+      "rol": "Supporting",
       "associated_groups": [
         "Circle of Khanna",
         "Dumbledore's Army",
@@ -7436,6 +7450,7 @@ export default {
       "wand": "12\", Ash, unicorn tail hair",
       "patronus": "Jack Russell terrier",
       "house": "Gryffindor",
+      "rol": "Main",
       "associated_groups": [
         "Weasley family",
         "Granger family",
@@ -9240,6 +9255,7 @@ export default {
       "wand": "10¾\", vine wood, dragon heartstring",
       "patronus": "Otter",
       "house": "Gryffindor",
+      "rol": "Main",
       "associated_groups": [
         "Granger family",
         "Weasley family",
@@ -9819,6 +9835,7 @@ export default {
       "wand": "12¾\", Walnut, dragon heartstring",
       "patronus": "None",
       "house": "Slytherin",
+      "rol": "Supporting",
       "associated_groups": [],
       "books_featured_in": [4, 5, 6, 7]
     },
@@ -9873,6 +9890,7 @@ export default {
       "wand": "Unknown 1st wand",
       "patronus": "Hare",
       "house": "Ravenclaw",
+      "rol": "Supporting",
       "associated_groups": [
         "Lovegood family",
         "Scamander family",
@@ -10186,6 +10204,7 @@ export default {
       "wand": "9½\", Fir, dragon heartstring",
       "patronus": "Cat",
       "house": "Gryffindor",
+      "rol": "Supporting",
       "associated_groups": [
         "McGonagall family",
         "Urquart family",
@@ -11416,7 +11435,7 @@ export default {
       "name": "Nymphadora Tonks",
       "birth": "between 1 September 1972 and 31 August 1973",
       "death": "2 May, 1998 (aged 24/25)",
-      "species": "Human (Metamorphmagus)",
+      "species": "Human",
       "ancestry": "Half-blood",
       "gender": "Female",
       "hair_color": "Variable (biologically light brown))",
@@ -11424,6 +11443,7 @@ export default {
       "wand": "Unknown length, wood and core",
       "patronus": "Jack Rabbit (pre 1995)",
       "house": "Hufflepuff",
+      "rol": "Supporting",
       "associated_groups": [
         "Tonks family",
         "Lupin family",
@@ -11442,7 +11462,7 @@ export default {
       "name": "Cassandra Trelawney",
       "birth": null,
       "death": null,
-      "species": "Human (Seer)",
+      "species": "Human",
       "ancestry": null,
       "gender": "Female",
       "hair_color": null,
@@ -11458,7 +11478,7 @@ export default {
       "name": "Sybill Trelawney",
       "birth": "9 March, prior to 1963, Great Britain or Ireland",
       "death": null,
-      "species": "Human (Seer)",
+      "species": "Human",
       "ancestry": "Half-blood",
       "gender": "Female",
       "hair_color": null,
@@ -11571,6 +11591,7 @@ export default {
       "wand": "8\", Birch, dragon heartstring (formerly)",
       "patronus": "Persian cat",
       "house": "Slytherin",
+      "rol": "Supporting",
       "associated_groups": [],
       "books_featured_in": [5, 6, 7]
     },
@@ -11579,7 +11600,7 @@ export default {
       "name": "Cassandra Vablatsky",
       "birth": "1894",
       "death": "1997 (aged 102 - 103)",
-      "species": "Human (Seer)",
+      "species": "Human",
       "ancestry": null,
       "gender": "Female",
       "hair_color": "Brown",
@@ -11810,6 +11831,7 @@ export default {
       "wand": "Unknown length, Yew, unknown core",
       "patronus": "Horse",
       "house": "Gryffindor",
+      "rol": "Supporting",
       "associated_groups": [
         "Weasley family",
         "Potter family",
