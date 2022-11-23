@@ -1,0 +1,433 @@
+/* For desktop: */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #7E9ABF;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    width: 13px;
+    background-color: #4A4A80;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7E9ABF;
+    border-radius: 4px;
+}
+
+.castillo {
+    min-width: 20%;
+    height: auto;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #4A4A80;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    z-index: 1;
+}
+
+nav {
+    max-width: 425px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.filtro {
+    background-color: #365B73;
+    color: beige;
+    height: auto;
+    max-width: 200px;
+    min-width: 100px;
+    border: solid 2px #7E9ABF;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-size: medium;
+}
+
+.filtro::-webkit-scrollbar {
+    width: 8px;
+}
+
+.filtro::-webkit-scrollbar-thumb {
+    background-color: #7E9ABF;
+    border-radius: 4px;
+}
+
+.barra {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: auto;
+    border: solid 2px #7E9ABF;
+    border-radius: 10px;
+    background: #365B73;
+    padding: 4px;
+    margin-right: 25px;
+    margin-left: 10px;
+    transition: 0, 5s;
+}
+
+.barra:hover {
+    width: 300px;
+}
+
+.buscar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: medium;
+    background: #365B73;
+    color: beige
+}
+
+.buscar::placeholder,
+.buscar {
+    color: transparent
+}
+
+.buscar:hover::placeholder,
+.buscar:hover {
+    color: beige
+}
+
+.searchIcon {
+    position: absolute;
+    right: 15px;
+    font-size: larger;
+    color: beige;
+}
+
+section {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    margin-left: 20px;
+    margin-right: 15px;
+
+}
+
+.card {
+    background-color: transparent;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    border-radius: 18px;
+    box-shadow: 5px black;
+    perspective: 1000px;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front {
+    background-color: #365B73;
+    font-size: large;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+    color: beige;
+}
+
+.back {
+    background-color: #365B73;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+
+.info {
+    margin: auto;
+    color: beige;
+}
+
+img {
+    justify-content: center;
+    width: auto;
+    height: 170px;
+    margin: auto;
+}
+
+.nombre {
+    margin: 10px;
+}
+
+.btn-returnToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #4A4A80;
+    color: beige;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: large;
+    transform: translateY(100px);
+    transition: 0.3s;
+}
+
+.btn-returnToTop-on {
+    transform: translateY(0);
+}
+
+@media (min-width:481px) and (max-width:960px) {
+   
+    section {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
+    }
+
+    .card {
+        width: 150px;
+        height: 200px;
+        box-shadow: 5px black;
+    }
+
+    .front {
+        width: 150px;
+        height: 200px;
+        font-size: medium;
+    }
+
+    .back {
+        width: 150px;
+        height: 200px;
+        font-size: medium;
+    }
+
+    img {
+        width: auto;
+        height: 130px;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: #4A4A80;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        z-index: 1;
+    }
+
+    nav {
+        width: auto;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .filtro {
+        font-size: small;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .barra {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: auto;
+        border: solid 2px #7E9ABF;
+        border-radius: 10px;
+        background: #365B73;
+        padding: 4px;
+        margin-right: 10px;
+        transition: 0, 5s;
+    }
+
+    .barra:hover {
+        width: 250px;
+    }
+
+    .buscar {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        font-size: small;
+        background: #365B73;
+        color: beige
+    }
+
+    .buscar::placeholder,
+    .buscar {
+        color: transparent
+    }
+
+    .buscar:hover::placeholder,
+    .buscar:hover {
+        color: beige
+    }
+
+    .searchIcon {
+        position: absolute;
+        right: 15px;
+        font-size: larger;
+        color: beige;
+    }
+}
+
+@media (max-width:480px) {
+    
+    section {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
+    }
+
+    .card {
+        width: 100px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .front {
+        width: 100px;
+        height: 150px;
+        font-size: 12px;
+    }
+
+    .back {
+        width: 100px;
+        height: 150px;
+        font-size: x-small;
+    }
+
+    img {
+        width: auto;
+        height: 90px;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: #4A4A80;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        z-index: 1;
+    }
+
+    nav {
+        width: auto;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .filtro {
+        font-size: x-small;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .barra {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: auto;
+        border: solid 2px #7E9ABF;
+        border-radius: 10px;
+        background: #365B73;
+        padding: 4px;
+        margin-right: 10px;
+        transition: 0, 5s;
+    }
+
+    .barra:hover {
+        width: 250px;
+    }
+
+    .buscar {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        font-size: x-small;
+        background: #365B73;
+        color: beige
+    }
+
+    .buscar::placeholder,
+    .buscar {
+        color: transparent
+    }
+
+    .buscar:hover::placeholder,
+    .buscar:hover {
+        color: beige
+    }
+
+    .searchIcon {
+        position: absolute;
+        right: 15px;
+        font-size: larger;
+        color: beige;
+    }
+}
