@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <img class="castillo" src="img/header.png" alt="">
+  <header>
+    <nav>
+      <select class="filtro filtroMobile" id="filtrar" value="Filter">
+        <option value="filter">Filter</option>
+        <optgroup label="Gender">
+          <option data-group="gender" id="man" value="Male">Male</option>
+          <option data-group="gender" id="women" value="Female">Female</option>
+        </optgroup>
+        <optgroup label="Characters">
+          <option data-group="rol" id="principales" value="Main">Main</option>
+          <option data-group="rol" id="secundarios" value="Supporting">Supporting</option>
+        </optgroup>
+        <optgroup label="House">
+          <option data-group="house" id="casa1" value="Gryffindor">Gryffindor</option>
+          <option data-group="house" id="casa2" value="Slytherin">Slytherin</option>
+          <option data-group="house" id="casa3" value="Hufflepuff">Hufflepuff</option>
+          <option data-group="house" id="casa4" value="Ravenclaw">Ravenclaw</option>
+        </optgroup>
+        <optgroup label="Books">
+          <option data-group="books" id="libro1" value="1">Philosopher's Stone</option>
+          <option data-group="books" id="libro2" value="2">Chamber of Secrets</option>
+          <option data-group="books" id="libro3" value="3">Prisoner of Azkaban</option>
+          <option data-group="books" id="libro4" value="4">Goblet of Fire</option>
+          <option data-group="books" id="libro5" value="5">Order of The Phenix</option>
+          <option data-group="books" id="libro6" value="6">Half-Blood Prince</option>
+          <option data-group="books" id="libro7" value="7">Deathly Hallows</option>
+        </optgroup>
+      </select>
+      <select class="filtro sortMobile" id="ordenar">
+        <option value="">Order</option>
+        <option value="a-z">A - Z</option>
+        <option value="z-a">Z - A</option>
+      </select>
+    </nav>
+    <div class="barra">
+      <input class="buscar" type="text" id="buscar" placeholder="Type to search..."
+        onkeyup="value = value.toLowerCase()">
+      <ion-icon class="searchIcon" name="search"></ion-icon>
+    </div>
+  </header>
+  <br>
+  <br>
+
+  <section id="section">
+  </section>
+
+  <div id="root"></div>
+  <button class="btn-returnToTop" id="btn-returnToTop">
+    <ion-icon class="returnToTopIcon" name="chevron-up"></ion-icon>
+  </button>
+   
+  
+
+  <script src="main.js" type="module"></script>
+  <!--libreria de iconos-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
