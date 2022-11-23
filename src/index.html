@@ -12,8 +12,8 @@
   <img class="castillo" src="img/header.png" alt="">
   <header>
     <nav>
-      <select class="filtro" id="filtrar" value="Filter">
-        <option value="">Filter</option>
+      <select class="filtro filtroMobile" id="filtrar" value="Filter">
+        <option value="filter">Filter</option>
         <optgroup label="Gender">
           <option data-group="gender" id="man" value="Male">Male</option>
           <option data-group="gender" id="women" value="Female">Female</option>
@@ -38,13 +38,17 @@
           <option data-group="books" id="libro7" value="7">Deathly Hallows</option>
         </optgroup>
       </select>
-      <select class="filtro" id="ordenar">
+      <select class="filtro sortMobile" id="ordenar">
         <option value="">Order</option>
         <option value="a-z">A - Z</option>
         <option value="z-a">Z - A</option>
       </select>
     </nav>
-    <input class="buscar" type="text" id="buscar" placeholder="Type to search..." onkeyup="value = value.toLowerCase()">
+    <div class="barra">
+      <input class="buscar" type="text" id="buscar" placeholder="Type to search..."
+        onkeyup="value = value.toLowerCase()">
+      <ion-icon class="searchIcon" name="search"></ion-icon>
+    </div>
   </header>
   <br>
   <br>
@@ -53,8 +57,16 @@
   </section>
 
   <div id="root"></div>
+  <button class="btn-returnToTop" id="btn-returnToTop">
+    <ion-icon class="returnToTopIcon" name="chevron-up"></ion-icon>
+  </button>
+   
+  
 
   <script src="main.js" type="module"></script>
+  <!--libreria de iconos-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

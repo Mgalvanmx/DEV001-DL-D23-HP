@@ -1,6 +1,7 @@
-import {filterProperties, filterBooks, sortCharacters, searchFilter} from './data.js';
+import { filterProperties, filterBooks, sortCharacters, searchFilter } from './data.js';
 import data from './data/harrypotter/data.js';
 
+const btnReturnToTop = document.getElementById("btn-returnToTop")
 const inputSearch = document.getElementById("buscar")
 const selectOrder = document.getElementById("ordenar")
 const select = document.getElementById("filtrar");
@@ -111,7 +112,7 @@ function filtrado() {
     let optionElement = select.options[select.selectedIndex];
     let selectedOption = select.options[select.selectedIndex].value;
     let selectedOptionBook = parseInt(select.options[select.selectedIndex].value);
-    
+
     if (optionElement.dataset.group === "books") {
         addArticle.innerHTML = ""
         filterCharacters = filterBooks(personajes, selectedOptionBook)
@@ -122,6 +123,7 @@ function filtrado() {
         filterCharacters = filterProperties(personajes, optionElement.dataset.group, selectedOption)
         crearElementos(filterCharacters)
     }
+
 }
 
 selectOrder.addEventListener("change", ordenar)
@@ -144,5 +146,21 @@ function search(e) {
     const inputValue = e.target.value
     addArticle.innerHTML = ""
     const searchResult = searchFilter(personajes, inputValue)
-    crearElementos(searchResult)  
+    crearElementos(searchResult)
 }
+
+btnReturnToTop.addEventListener("click", () => {
+    window.scrollTo(0, 0)
+});
+
+window.onscroll = () => {
+    add_btnReturnToTop()
+}
+const add_btnReturnToTop = () => {
+    if (window.scrollY < 300) {
+        btnReturnToTop.classList.remove("btn-returnToTop-on")
+    } else {
+        btnReturnToTop.classList.add("btn-returnToTop-on")
+    }
+}
+
